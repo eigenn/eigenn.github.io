@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="mainEigennApp">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,11 +14,6 @@
     <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
-
-    
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/ie10-viewport-bug-workaround.js"></script>
-
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -28,8 +23,7 @@
   </head>
 
   <body>
-
-    <!-- Fixed navbar -->
+    <!-- Navigation bar -->
     <div class="navbar navbar-default navbar-fixed-top" role="navigation" id="nav">
       <div class="container">
         <div class="navbar-header">
@@ -53,15 +47,19 @@
         </div><!--/.nav-collapse -->
       </div>
     </div>
+    <!-- End Navigation bar -->
 
-    	<div class="banner">
-    		<div class="logo">
-    			<h1 class="logo">{ Eigenn. }</h1>
-    			<hr>
-    			<h4> Software architecture and development<h4>
-    		</div>
-    	</div>
+    <!-- Banner -->
+  	<div class="banner">
+  		<div class="logo">
+  			<h1 class="logo">{ Eigenn. }</h1>
+  			<hr>
+  			<h4> Software architecture and development<h4>
+  		</div>
+  	</div>
+    <!-- End Banner -->
 
+    <!-- About Section -->
     <div class="container">
     	<section id="about">
 			<div class="page-header">
@@ -104,198 +102,100 @@
   				</div>
 			</div>
 		</section>
+    </div>
+    <!--End About Section -->
 		
-		<section id="technical_skills">
+    <!-- Skills Section -->
+    <div class="container">
+		<section id="technical_skills" ng-controller="SkillsSectionCtrl">
 			<div class="page-header">
 				<h1>Technical Skills</h1>
 			</div>
 			<br>
-			<div class="row">
+
+			<div class="row" ng-repeat-start="skill in skills">
   				<div class="col-xs-6 col-md-4">
-  					<b>Programming Languages</b>
+                    <b>{{ skill.name}}</b>
   				</div>
-  				<div class="col-xs-12 col-sm-6 col-md-8">
-  					Python, Javascript, C/C++, Java
+                <div class="col-xs-12 col-sm-6 col-md-8">
+                    <ul class="skills">
+                        <li class="skills" ng-repeat="value in skill.values">
+                            <p>{{ value }}</p>
+                        </li>
+                    </ul>
   				</div>
 			</div>
-			<br>
-			<div class="row">
-  				<div class="col-xs-6 col-md-4">
-  					<b>Markup & Other</b>
-  				</div>
-  				<div class="col-xs-12 col-sm-6 col-md-8">
-  					HTM5, CSS3, JSON, XML
-  				</div>
+			<br ng-repeat-end>
+		</section>
+    </div>
+    <!-- End Skills Section -->
+		
+    <!-- Experience Section -->
+    <div class="container">
+		<section id="experience" ng-controller="ExperienceSectionCtrl">
+            <div class="page-header">
+			    <h1>Experience</h1>
 			</div>
-			<br>
-			<div class="row">
-  				<div class="col-xs-6 col-md-4">
-  					<b>Frameworks & Packages</b>
-  				</div>
-  				<div class="col-xs-12 col-sm-6 col-md-8">
-  					Django, Flask, Webapp2, MapReduce, Celery, SQLAlchemy, PyMongo, WTForms, jinja2, Bootstrap, jQuery, pycrypto, Mock, Nose, Sphinx
-  				</div>
+            <div ng-repeat-start="experience in experiences">
+                <h3>{{ experience.company }}</h3>
+                <p>
+                    <small>
+                        <i class="glyphicon glyphicon-briefcase"></i></i>
+                        {{ experience.position }}
+                    </small>
+                </p>
+                <p>
+                    <small>
+                        <i class="glyphicon glyphicon-time"></i>
+                        {{ experience.duration }}
+                    </small>
+                </p>
+                <p>
+                    <small>
+                        <i class="glyphicon glyphicon-globe"></i>
+                        {{ experience.location }}
+                    </small>
+                </p>
 			</div>
-			<br>
-			<div class="row">
-  				<div class="col-xs-6 col-md-4">
-  					<b>Platforms</b>
-  				</div>
-  				<div class="col-xs-12 col-sm-6 col-md-8">
-  					Amazon AWS, Google App Engine, Rackspace
-  				</div>
-			</div>
-			<br>
-			<div class="row">
-  				<div class="col-xs-6 col-md-4">
-  					<b>Web Server</b>
-  				</div>
-  				<div class="col-xs-12 col-sm-6 col-md-8">
-  					Apache web server, NGINX, Gunicorn, Apache Tomcat
-  				</div>
-			</div>
-			<br>
-			<div class="row">
-  				<div class="col-xs-6 col-md-4">
-  					<b>OS</b>
-  				</div>
-  				<div class="col-xs-12 col-sm-6 col-md-8">
-  					Ubuntu Server, Debian, OS X
-  				</div>
-			</div>
-			<br>
-			<div class="row">
-  				<div class="col-xs-6 col-md-4">
-  					<b>API's</b>
-  				</div>
-  				<div class="col-xs-12 col-sm-6 col-md-8">
-  					OpenMarket, Sagepay, Paypal, PayPoint, Datacash, Stripe, Apple In-App purchase, Google Play In-app Billing, Amazon In-App Purchasing, Meraki, SendGrid, Youtube, GoogleDrive (Google Docs), Twitter, Facebook, Flickr
-  				</div>
+            <div ng-repeat-end>
+                <p>
+                    {{ experience.description  }}
+                </p>
 			</div>
 		</section>
+    </div>
+    <!-- End Experience Section -->
 		
-		<section id="experience">
-			<div class="page-header">
-				<h1>Experience</h1>
-			</div>
-			<div class="container">
-                <ul class="timeline">
-        		    <li>
-          			    <div class="timeline-badge"><i class="glyphicon glyphicon-calendar"></i></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4 class="timeline-title">Service Agility</h4>
-                                <p><small class="text-muted"><i class="glyphicon glyphicon-briefcase"></i> Lead Developer</small></p>
-                                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> October 2013 - present</small></p>
-                                <p><small class="text-muted"><i class="glyphicon glyphicon-globe"></i> London, UK</small></p>
-                            </div>
-                            <div class="timeline-body">
-                                <p>
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li  class="timeline-inverted">
-          			    <div class="timeline-badge"><i class="glyphicon glyphicon-calendar"></i></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4 class="timeline-title">Jordan Media</h4>
-                                <p><small class="text-muted"><i class="glyphicon glyphicon-briefcase"></i> Senior Python Developer</small></p>
-                                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> July 2013 – October 2013 </small></p>
-                                <p><small class="text-muted"><i class="glyphicon glyphicon-globe"></i> London, UK</small></p>
-                            </div>
-                            <div class="timeline-body">
-                                <p>
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-          			    <div class="timeline-badge"><i class="glyphicon glyphicon-calendar"></i></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4 class="timeline-title">Gamesys</h4>
-                                <p><small class="text-muted"><i class="glyphicon glyphicon-briefcase"></i> Python Developer</small></p>
-                                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> February 2013 – July 2013 </small></p>
-                                <p><small class="text-muted"><i class="glyphicon glyphicon-globe"></i> London, UK</small></p>
-                            </div>
-                            <div class="timeline-body">
-                                <p>
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li  class="timeline-inverted">
-          			    <div class="timeline-badge"><i class="glyphicon glyphicon-calendar"></i></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4 class="timeline-title">Path Intelligence</h4>
-                                <p><small class="text-muted"><i class="glyphicon glyphicon-briefcase"></i> Python Developer</small></p>
-                                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> February 2012 – February 2013 </small></p>
-                                <p><small class="text-muted"><i class="glyphicon glyphicon-globe"></i> London - Portsmouth, UK</small></p>
-                            </div>
-                            <div class="timeline-body">
-                                <p>
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-          			    <div class="timeline-badge"><i class="glyphicon glyphicon-calendar"></i></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4 class="timeline-title">MBL Group Limited</h4>
-                                <p><small class="text-muted"><i class="glyphicon glyphicon-briefcase"></i> Python Developer</small></p>
-                                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> September 2011 – January 2012 </small></p>
-                                <p><small class="text-muted"><i class="glyphicon glyphicon-globe"></i> Preston, UK</small></p>
-                            </div>
-                            <div class="timeline-body">
-                                <p>
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li  class="timeline-inverted">
-          			    <div class="timeline-badge"><i class="glyphicon glyphicon-calendar"></i></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4 class="timeline-title">Eurofinance</h4>
-                                <p><small class="text-muted"><i class="glyphicon glyphicon-briefcase"></i> Python Developer</small></p>
-                                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> December 2009 – August 2011 </small></p>
-                                <p><small class="text-muted"><i class="glyphicon glyphicon-globe"></i> Bratislava, SVK; Brussels, BEL</small></p>
-                            </div>
-                            <div class="timeline-body">
-                                <p>
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-              </div>
-		</section>
-		
+    <!-- Education Section -->
+    <div class="container">
 		<section id="education">
 			<div class="page-header">
 				<h1>Education</h1>
 			</div>
 			<p>
+                Coming Soon ...
 			</p>
 		</section>
+    </div>
 		
+    <!-- Profiles Section -->
+    <div class="container">
 		<section id="profiles">
 			<div class="page-header">
 				<h1>Profiles</h1>
 			</div>
 			<p>
+                Coming Soon ...
 			</p>
 		</section>
-		
-    </div> <!-- /container -->
+    </div>
 
 
     <!-- Bootstrap core JavaScript ================================================== -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
     <script src="js/slow_scroll.js"></script>
+    <script src="js/controllers.js"></script>
   </body>
 </html>

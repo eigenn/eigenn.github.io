@@ -1,0 +1,45 @@
+[
+    {
+        "company": "Service Agility",
+        "duration": "October 2013 – Present",
+        "location": "London, UK",
+        "position": "Lead Developer",
+        "description" : ""
+    },
+    {
+        "company": "Jordan Media Limited",
+        "duration": "July 2013 – October 2013",
+        "location": "London, UK",
+        "position": "Senior Python Developer",
+        "description" : "Development and Integration of payment and gift card solutions on rackspace and amazon AWS instances."
+
+    },
+    {
+        "company": "Gamesys",
+        "duration": "January 2013 – July 2013",
+        "location": "London, UK",
+        "position": "Python Developer",
+        "description" : "At Gamesys I was responsible for creating the technical design and implementation of Payment verification system for iPhone, Android and web clients that have been implemented on google app engine. The payment verification systems was responsible for the final verification point of purchase, client and the mechanism for distribution of user’s in-game purchased goods. In addition I designed small set of tools that allowed for rapid development of the system. This system was essentially a part of CMS that was the responsible for offer systems, payment’s and messaging that supported number of games at Gamesys. While working for Gamesys I have also design and implementation the User interface for company access control application. "
+    },
+    {
+        "company": "Path Intelligence",
+        "duration": "February 2012 – February 2013",
+        "location": "London - Portsmouth, UK",
+        "position": "Python Developer",
+        "description" : "While working at Path Intelligence, I was working on two separated project developed in Python. My main project was designing and implementation of full scaled voucher system called Flockr www.goflockr.com that I have worked on as solo developer. I have been involved in full cycle development, where I integrated the location tracking system, offer matrix system for automated matching of customers, manual offer matching system, reporting tools, SMS campaigning, Reporting System, Facebook signup page, front end design implementation and various small task on server maintenance(amazon AWS). My second project at path intelligence was developing a Wi-Fi networks for shopping center’s that encourage users to sing up and retrieve data about the shoppers. This system was build on top of Meraki, and incorporated in its design analytical tool that allowed customers to view the conversion between the number of visitors in the desired location compared with the clients social media interaction on Twitter and Facebook.."
+    },
+    {
+        "company": "MBL Group Limited",
+        "duration": "September 2011 – January 2012",
+        "location": "Preston, UK",
+        "position": "Python Deleveloper",
+        "description" : "I have joined the company to manage the system migration from python Django powered apps to .NET platform. I was focusing on maintaining the current Django platform in stable state as solo developer with lots of bug fixing. Migrating database to the new system and making the transition as seamless for customers. closing down the servers on rackspace and managing communication with new platform suppliers."
+    },
+    {
+        "company": "Eurofinancie",
+        "duration": "December 2009 – August 2011",
+        "location": "Bratislava, SVK Brussels, BEL",
+        "position": "Softwear Developer",
+        "description" : "Working as a part of small team of programmers, creating a customer relationship Management application that meant to handle signing new contracts with foreign clients. During development my main contributions were in designing the models and handling reporting system for administrative use. Due to high security requirements by my employ I have designed a special algorithms for password and for handling one time request to contracts. Also implemented timekeeping analytical tools that were designed to dynamically interact with contracts, as there were read by clients."
+    }
+]

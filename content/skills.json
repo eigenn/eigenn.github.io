@@ -1,0 +1,105 @@
+[
+    {
+        "name": "Programming Languages",
+        "values": [
+            "python",
+            "JavaScript",
+            "c/c++",
+            "Java",
+            "Haskell"
+        ]
+    },
+    {
+    	"name" : "Markup & Other",
+    	"values" : [
+    		"HTM5", 
+    	 	"CSS3", 
+    	 	"JSON", 
+    	 	"XML"
+    	]
+    },
+    {
+    	"name" : "Frameworks & Packages",
+    	"values" : [
+    		"Django",
+    		"Flask",
+    		"Webapp2", 
+    		"MapReduce",
+    		"Celery", 
+    		"SQLAlchemy", 
+    		"PyMongo", 
+    		"WTForms", 
+    		"jinja2", 
+    		"Bootstrap", 
+    		"jQuery",
+    		"pycrypto", 
+    		"Mock", 
+    		"Nose",
+    		"Sphinx"
+    	]
+    },
+    {
+    	"name" : "Platforms",
+    	"values" : [
+ 			"Amazon AWS",
+ 			"Google App Engine",
+ 			"Rackspace"
+    	]
+    },
+    {
+    	"name" : "Web Server",
+    	"values" : [
+			"Apache web server", 
+			"NGINX", 
+			"Gunicorn", 
+			"Apache Tomcat"
+    	]
+    },
+    {
+    	"name" : "OS",
+    	"values" : [
+			"Ubuntu Server", 
+			"Debian", 
+			"OS X"
+
+    	]
+    },
+    {
+    	"name" : "API’s",
+    	"values" : [
+			"OpenMarket", 
+			"Sagepay", 
+			"Paypal", 
+			"PayPoint", 
+			"Datacash", 
+			"Stripe", 
+			"Apple In-App purchase", 
+			"Google Play In-app Billing", 
+			"Amazon In-App Purchasing",
+			"Meraki",
+			"SendGrid", 
+			"YouTube", 
+			"Google Drive (Google Docs)", 
+			"Twitter", 
+			"Facebook",
+			"Flickr"
+
+    	]
+    },
+    {
+    	"name" : "Other",
+    	"values" : [
+			"Git", 
+			"Vim",
+			"Eclipse",
+			"Xcode",
+			"Agile", 
+			"Scrum",
+			"Jira",
+			"Redmine",
+			"Trello",
+			"Jenkins",
+			"CircleCi"
+    	]
+    }
+]
