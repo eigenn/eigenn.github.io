@@ -1,0 +1,33 @@
+<div class="container">
+    <section id="experience">
+        <div class="page-header">
+            <h1>Experience</h1>
+        </div>
+        <div ng-repeat-start="experience in experiences">
+            <h3>{{ experience.company }}</h3>
+            <p>
+                <small>
+                    <i class="glyphicon glyphicon-briefcase"></i></i>
+                    {{ experience.position }}
+                </small>
+            </p>
+            <p>
+                <small>
+                    <i class="glyphicon glyphicon-time"></i>
+                    {{ experience.duration }}
+                </small>
+            </p>
+            <p>
+                <small>
+                    <i class="glyphicon glyphicon-globe"></i>
+                    {{ experience.location }}
+                </small>
+            </p>
+        </div>
+        <div ng-repeat-end>
+            <p>
+                {{ experience.description  }}
+            </p>
+        </div>
+    </section>
+</div>

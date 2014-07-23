@@ -1,0 +1,23 @@
+<div class="container">
+    <section id="technical_skills">
+			<div class="page-header">
+				<h1>Technical Skills</h1>
+			</div>
+			<br>
+
+			<div class="row" ng-repeat-start="skill in skills">
+  				<div class="col-xs-6 col-md-4">
+                    <b>{{ skill.name}}</b>
+  				</div>
+                <div class="col-xs-12 col-sm-6 col-md-8">
+                    <ul class="skills">
+                        <li class="skills" ng-repeat="value in skill.values">
+                            <p>{{ value }}</p>
+                        </li>
+                    </ul>
+  				</div>
+			</div>
+			<br ng-repeat-end>
+		</section>
+    </div>
+

@@ -44,152 +44,38 @@
             <li><a href="#education">Education</a></li>
             <li><a href="#profiles">Profiles</a></li>
           </ul>
-        </div><!--/.nav-collapse -->
+        </div>
       </div>
     </div>
     <!-- End Navigation bar -->
 
     <!-- Banner -->
-  	<div class="banner">
-  		<div class="logo">
-  			<h1 class="logo">{ Eigenn. }</h1>
-  			<hr>
-  			<h4> Software architecture and development<h4>
-  		</div>
-  	</div>
+    <div class="banner">
+	    <div class="logo">
+		    <h1 class="logo">{ Eigenn. }</h1>
+		    <hr>
+		    <h4> Software architecture and development<h4>
+	    </div>
+    </div>
     <!-- End Banner -->
 
     <!-- About Section -->
-    <div class="container">
-    	<section id="about">
-			<div class="page-header">
-				<h1>About</h1>
-			</div>
-			<p>
-					I really enjoy problem solving, from building large scale web application to sudoku.Im one of those lucky people who find what they want to do in they life’s, for me that is software development. Im originally came from Slovakia but now I live and code in London. When I'm not coding I do street photography around the town. When I'm not in London, you will almost certainly found me in Souther Spain drinking some Cruzcampo in "chiringuito" or canoeing down the sea.
-			</p>
-		</section>
-		
-		<section id="info">
-			<div class="page-header">
-				<h1>Info</h1>
-			</div>
-			<br>
-			<div class="row">
-  				<div class="col-xs-6 col-md-4">
-  					<b>Full Name</b>
-  				</div>
-  				<div class="col-xs-12 col-sm-6 col-md-8">
-  					David Doka
-  				</div>
-			</div>
-			<br>
-			<div class="row">
-  				<div class="col-xs-6 col-md-4">
-  					<b>Address</b>
-  				</div>
-  				<div class="col-xs-12 col-sm-6 col-md-8">
-  					Higbury, London, N5, UK
-  				</div>
-			</div>
-			<br>
-			<div class="row">
-  				<div class="col-xs-6 col-md-4">
-  					<b>Email</b>
-  				</div>
-  				<div class="col-xs-12 col-sm-6 col-md-8">
-  					david@eigenn.com
-  				</div>
-			</div>
-		</section>
-    </div>
+    <div ng-include="'partials/about.html'"></div>
     <!--End About Section -->
 		
     <!-- Skills Section -->
-    <div class="container">
-		<section id="technical_skills" ng-controller="SkillsSectionCtrl">
-			<div class="page-header">
-				<h1>Technical Skills</h1>
-			</div>
-			<br>
-
-			<div class="row" ng-repeat-start="skill in skills">
-  				<div class="col-xs-6 col-md-4">
-                    <b>{{ skill.name}}</b>
-  				</div>
-                <div class="col-xs-12 col-sm-6 col-md-8">
-                    <ul class="skills">
-                        <li class="skills" ng-repeat="value in skill.values">
-                            <p>{{ value }}</p>
-                        </li>
-                    </ul>
-  				</div>
-			</div>
-			<br ng-repeat-end>
-		</section>
-    </div>
+    <div ng-include="template" ng-controller="SkillsSectionCtrl"></div>
     <!-- End Skills Section -->
 		
     <!-- Experience Section -->
-    <div class="container">
-		<section id="experience" ng-controller="ExperienceSectionCtrl">
-            <div class="page-header">
-			    <h1>Experience</h1>
-			</div>
-            <div ng-repeat-start="experience in experiences">
-                <h3>{{ experience.company }}</h3>
-                <p>
-                    <small>
-                        <i class="glyphicon glyphicon-briefcase"></i></i>
-                        {{ experience.position }}
-                    </small>
-                </p>
-                <p>
-                    <small>
-                        <i class="glyphicon glyphicon-time"></i>
-                        {{ experience.duration }}
-                    </small>
-                </p>
-                <p>
-                    <small>
-                        <i class="glyphicon glyphicon-globe"></i>
-                        {{ experience.location }}
-                    </small>
-                </p>
-			</div>
-            <div ng-repeat-end>
-                <p>
-                    {{ experience.description  }}
-                </p>
-			</div>
-		</section>
-    </div>
+    <div ng-include="template" ng-controller="ExperienceSectionCtrl"></div>
     <!-- End Experience Section -->
 		
     <!-- Education Section -->
-    <div class="container">
-		<section id="education">
-			<div class="page-header">
-				<h1>Education</h1>
-			</div>
-			<p>
-                Coming Soon ...
-			</p>
-		</section>
-    </div>
-		
+    <div ng-include="'partials/eduction.html'"></div>
+	
     <!-- Profiles Section -->
-    <div class="container">
-		<section id="profiles">
-			<div class="page-header">
-				<h1>Profiles</h1>
-			</div>
-			<p>
-                Coming Soon ...
-			</p>
-		</section>
-    </div>
-
+    <div ng-include="'partials/social.html'"></div>
 
     <!-- Bootstrap core JavaScript ================================================== -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
