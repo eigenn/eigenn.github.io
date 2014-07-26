@@ -1,14 +1,11 @@
-$("#nav ul li a[href^='#']").on('click', function(e) {
+$('#nav').affix({
+      offset: {
+        top: $('header').height() - 3
+      }
+});
 
-   e.preventDefault();
-
-   var hash = this.hash;
-
-   // animate
-   $('html, body').animate({
-       scrollTop: $(this.hash).offset().top
-     }, 300, function(){
-       window.location.hash = hash;
-     });
-
+$(document).on('click','.navbar-collapse.in',function(e) {
+    if( $(e.target).is('a') ) {
+        $(this).collapse('hide');
+    }
 });

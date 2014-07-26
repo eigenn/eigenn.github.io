@@ -12,7 +12,6 @@ appControlers.controller('ResumePageCtrl', ['$scope', function($scope) {
 appControlers.controller('ExperienceSectionCtrl', ['$scope', '$http', function ($scope, $http) {
     $http.get('content/experience.json').success(function (data) {
         $scope.experiences = data;
-        $scope.template = "partials/resume/experience.html";
     });
 }]);
 
@@ -20,6 +19,16 @@ appControlers.controller('ExperienceSectionCtrl', ['$scope', '$http', function (
 appControlers.controller('SkillsSectionCtrl', ['$scope', '$http', function ($scope, $http) {
     $http.get('content/skills.json').success(function (data) {
         $scope.skills = data;
-        $scope.template = "partials//resume/skills.html";
     });
 }]);
+
+appControlers.directive('scrollOnClick', function() {
+  return {
+    restrict: 'A',
+    link: function(scope, $elm, attrs) {
+      $elm.on('click', function() {
+        $("body").animate({scrollTop: $('#nav').position().top}, "slow");
+      });
+    }
+  }
+});
