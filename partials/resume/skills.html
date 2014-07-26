@@ -12,12 +12,16 @@
                 <div class="col-xs-12 col-sm-6 col-md-8">
                     <ul class="skills">
                         <li class="skills" ng-repeat="value in skill.values">
-                            <p>{{ value }}</p>
+                            <p>{{ value.name }}
+                            <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="{{value.score}}" aria-valuemin="0" aria-valuemax="100" style="width: {{value.score}}%;"></div>
+                            </div>
+                            </p>
                         </li>
                     </ul>
   				</div>
 			</div>
-			<br ng-repeat-end>
+			<hr ng-repeat-end>
 		</section>
     </div>
 

@@ -2,104 +2,283 @@
     {
         "name": "Programming Languages",
         "values": [
-            "python",
-            "JavaScript",
-            "c/c++",
-            "Java",
-            "Haskell"
+            {
+                "name":"python",
+                "score": 100
+            },
+            {
+                "name":"JavaScript",
+                "score": 70
+            },
+            {
+                "name": "c/c++",
+                "score": 50
+            },
+            {
+               "name": "Java",
+               "score": 50
+            },
+            {
+               "name": "Haskell",
+               "score": 60
+            }
         ]
     },
     {
     	"name" : "Markup & Other",
     	"values" : [
-    		"HTM5", 
-    	 	"CSS3", 
-    	 	"JSON", 
-    	 	"XML"
+    		{
+               "name":"HTM5",
+               "score": 90
+            }, 
+    	 	{
+               "name":"CSS3",
+               "score": 90
+            }, 
+    	 	{
+               "name":"JSON",
+               "score": 100
+            }, 
+    	 	{
+               "name":"XML",
+               "score": 80
+            }
     	]
     },
     {
     	"name" : "Frameworks & Packages",
     	"values" : [
-    		"Django",
-    		"Flask",
-    		"Webapp2", 
-    		"MapReduce",
-    		"Celery", 
-    		"SQLAlchemy", 
-    		"PyMongo", 
-    		"WTForms", 
-    		"jinja2", 
-    		"Bootstrap", 
-    		"jQuery",
-    		"pycrypto", 
-    		"Mock", 
-    		"Nose",
-    		"Sphinx"
+    		{
+               "name":"Django",
+               "score": 90
+            },
+    		{
+               "name":"Flask",
+               "score": 100
+            },
+    		{
+               "name":"Webapp2",
+               "score": 90
+            }, 
+    		{
+               "name":"MapReduce",
+               "score": 80
+            },
+    		{
+               "name":"Celery",
+               "score": 70
+            }, 
+    		{
+               "name":"SQLAlchemy",
+               "score": 90
+            }, 
+    		{
+               "name":"PyMongo",
+               "score": 60
+            }, 
+    		{
+               "name":"WTForms",
+               "score": 90
+            }, 
+    		{
+               "name":"jinja2",
+               "score": 100
+            }, 
+    		{
+               "name":"Bootstrap",
+               "score": 70
+            }, 
+    		{
+               "name":"jQuery",
+               "score": 50
+            },
+    		{
+               "name":"pycrypto",
+               "score": 90
+            }, 
+    		{
+               "name":"Mock",
+               "score": 90
+            }, 
+    		{
+               "name":"Nose",
+               "score": 95
+            },
+    		{
+               "name":"Sphinx",
+               "score": 85
+            }
     	]
     },
     {
     	"name" : "Platforms",
     	"values" : [
- 			"Amazon AWS",
- 			"Google App Engine",
- 			"Rackspace"
+ 			{
+               "name":"Amazon AWS",
+               "score": 100
+            },
+ 			{
+               "name":"Google App Engine",
+               "score": 100
+            },
+ 			{
+               "name":"Rackspace",
+               "score": 70
+            }
     	]
     },
     {
     	"name" : "Web Server",
     	"values" : [
-			"Apache web server", 
-			"NGINX", 
-			"Gunicorn", 
-			"Apache Tomcat"
+			{
+               "name":"NGINX",
+               "score": 90
+            }, 
+			{
+               "name":"Gunicorn",
+               "score": 85
+            }, 
+			{
+               "name":"Apache Tomcat",
+               "score": 100
+            }
     	]
     },
     {
     	"name" : "OS",
     	"values" : [
-			"Ubuntu Server", 
-			"Debian", 
-			"OS X"
+			{
+               "name":"Ubuntu Server",
+               "score": 95
+            }, 
+			{
+               "name":"Debian",
+               "score": 90
+            }, 
+			{
+               "name":"OS X",
+               "score": 100
+            }
 
     	]
     },
     {
     	"name" : "API’s",
     	"values" : [
-			"OpenMarket", 
-			"Sagepay", 
-			"Paypal", 
-			"PayPoint", 
-			"Datacash", 
-			"Stripe", 
-			"Apple In-App purchase", 
-			"Google Play In-app Billing", 
-			"Amazon In-App Purchasing",
-			"Meraki",
-			"SendGrid", 
-			"YouTube", 
-			"Google Drive (Google Docs)", 
-			"Twitter", 
-			"Facebook",
-			"Flickr"
+			{
+               "name":"OpenMarket",
+               "score": 85
+            }, 
+			{
+               "name":"Sagepay",
+               "score": 85
+            }, 
+			{
+               "name":"Paypal",
+               "score": 99
+            }, 
+			{
+               "name":"PayPoint",
+               "score": 70
+            }, 
+			{
+               "name":"Datacash",
+               "score": 95
+            }, 
+			{
+               "name":"Stripe",
+               "score": 100
+            }, 
+			{
+               "name":"Apple In-App purchase",
+               "score": 100
+            }, 
+			{
+               "name":"Google Play In-app Billing",
+               "score": 100
+            }, 
+			{
+               "name":"Amazon In-App Purchasing",
+               "score": 100
+            },
+			{
+               "name":"Meraki",
+               "score": 95
+            },
+			{
+               "name":"SendGrid",
+               "score": 80
+            }, 
+			{
+               "name":"YouTube",
+               "score": 100
+            }, 
+			{
+               "name":"Google Drive (Google Docs)",
+               "score": 95
+            }, 
+			{
+               "name":"Twitter",
+               "score": 85
+            }, 
+			{
+               "name":"Facebook",
+               "score": 95
+            },
+			{
+               "name":"Flickr",
+               "score": 80
+            }
 
     	]
     },
     {
     	"name" : "Other",
     	"values" : [
-			"Git", 
-			"Vim",
-			"Eclipse",
-			"Xcode",
-			"Agile", 
-			"Scrum",
-			"Jira",
-			"Redmine",
-			"Trello",
-			"Jenkins",
-			"CircleCi"
+			{
+               "name":"Git",
+               "score": 100
+            }, 
+			{
+               "name":"Vim",
+               "score": 100
+            },
+			{
+               "name":"Eclipse",
+               "score": 65
+            },
+			{
+               "name":"Xcode",
+               "score": 70
+            },
+			{
+               "name":"Agile",
+               "score": 100
+            }, 
+			{
+               "name":"Scrum",
+               "score": 80
+            },
+			{
+               "name":"Jira",
+               "score": 95
+            },
+			{
+               "name":"Redmine",
+               "score": 85
+            },
+			{
+               "name":"Trello",
+               "score": 95
+            },
+			{
+               "name":"Jenkins",
+               "score": 80
+            },
+			{
+               "name":"CircleCi",
+               "score": 80
+            }
     	]
     }
 ]
