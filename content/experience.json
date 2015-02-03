@@ -4,14 +4,14 @@
         "duration": "October 2013 – Present",
         "location": "London, UK",
         "position": "Lead Developer",
-        "description" : "As a Lead developer, my main responsibilities where architecture and development of the core platform that covers Unilever’s heartage.me, more information available up on request…."
+        "description" : "At Service Agility I was responsible for Developing a cloud based CMS used by Unilever . As lead Developer I implemented modules That supported, Dynamic routing (request attribute based routing), Authentication layer (Auth 2.0) Permission model, Distributed cache and invalidation framework, Implementation of pluggable store (amazon Dynamo DB, Local stores), Templating Environment, Dynamically configurable Runtimes that allowed the platform to run in multiple frameworks  (Pyramid, werkzeug) and Multiple environment (AWS, GAE, Local), addon based integration with the platform that allowed other web services to natively integrate with the Framework and its routing tables. SWF for deployments and and bundling of the framework. Technical Support for junior members of the team and architecture of the above mentioned features. As lead Developer I was also responsible for overlooking the Front end implementation of our products for Unilever that were implemented using Angular Js and bootstrap. Integration with world health organization library written in Java that integrated with the platform."
     },
     {
         "company": "Jordan Media Limited",
         "duration": "July 2013 – October 2013",
         "location": "London, UK",
         "position": "Senior Python Developer",
-        "description" : "Development and Integration of payment and gift card solutions on rackspace and amazon AWS instances. For more infomration please contact me."
+        "description" : "At jordan media I was responsible for redesigning the core voucher system that was used by clients such as M&S, John Lewis and Next. Core part of my responsibility where to insure the security of platform and integration with Payment gateway systems while integrating with our billing system. As part of my role I was also responsible for mentoring junior developers. The system was cloud based runnin on Rackspace instances."
 
     },
     {
